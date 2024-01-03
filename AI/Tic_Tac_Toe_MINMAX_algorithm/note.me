@@ -1,0 +1,27 @@
+
+## Minimax Algorithm
+Minimax is a type of adversarial search algorithm for generating and exploring game trees. 
+It is mostly used to solve zero-sum games where one side’s gain is equivalent to other side’s loss,
+so adding all gains and subtracting all losses end up being zero.
+
+Adversarial search differs from conventional searching algorithms by adding opponents into the mix.
+Minimax algorithm keeps playing the turns of both player and the opponent optimally to figure out the best possible move.
+
+This code is an implementation of the minimax algorithm in artificial intelligence. 
+The minimax algorithm is a decision-making algorithm used in the field of game theory and artificial intelligence.
+It is used to determine the optimal move for a player in a two-player game by considering all possible outcomes of the game. 
+The algorithm helps in selecting the move that minimizes the maximum possible loss.
+
+The code defines three functions: MINIMAX-DECISION, MAX-VALUE, and MIN-VALUE.
+The MINIMAX-DECISION function takes a state as an input and returns the best action for the player who is maximizing their utility.
+The MAX-VALUE function returns the highest utility value that the maximizer can achieve from a given state.
+The MIN-VALUE function returns the lowest utility value that the minimizer can achieve from a given state.
+The code uses recursion to search through the game tree and applies a terminal test and a utility function to evaluate the leaf nodes.
+The code also uses a negative infinity and a positive infinity value to initialize the maximizer and the minimizer values, respectively2
+
+The minimax algorithm has some properties and advantages, such as:
+
+It is a complete and optimal algorithm, meaning that it will always find the best solution if it exists and if the search tree is finite.
+It is a depth-first search algorithm, meaning that it explores the deepest nodes first before backtracking to explore other branches.
+It assumes that both players are rational and play optimally, meaning that they will always choose the best move for themselves.
+It can be extended to more complex games and scenarios by using alpha-beta pruning, heuristic evaluation functions, and iterative deepening345
