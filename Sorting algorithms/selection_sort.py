@@ -1,5 +1,5 @@
 # selection sort algorithm desc and asc
-def selection_sort(numbers: int, order : str = "asc"):
+def selection_sort(numbers: list, order : str = "asc"):
     for i in range(0,len(numbers)):
         for j in range(0,i + 1):
             if order == "asc":
@@ -11,7 +11,7 @@ def selection_sort(numbers: int, order : str = "asc"):
             else:
                 raise Exception("Not valid input for order, we accept asc as ascendding order and desc as descendding order!")
 
-
+# # O(n^2)
 # implementation
 if __name__ == "__main__":
     numbers = [1, 5, 3, 6, 9, 0, 2, 7, 8]
